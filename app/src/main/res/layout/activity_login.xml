@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/supermarket_949913"
+    />
+
+
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+        android:elevation="5dp"
+    android:src="@drawable/shopping_icon_2184065_1280"
+    android:layout_marginTop="30dp"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Hola, te damos la"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="bienvenida!"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresa con tu red social de preferencia"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:paddingTop="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="220dp"
+          android:layout_weight="0.5">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                android:elevation="5dp"
+                android:id="@+id/iniciar"
+                android:scaleType="centerCrop"
+                android:background="@drawable/background_boton_google"
+                android:src="@drawable/ic_google"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+      </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_weight="0.5">
+
+
+
+        <ImageButton
+                android:id="@+id/face"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/background_boton_facebook"
+                android:src="@mipmap/ic_fa"
+                android:elevation="5dp"
+                android:onClick="fac"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignStart="@+id/loginButton" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/loginButton"
+        android:layout_width="150dp"
+        android:layout_height="155dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="65dp"
+        android:visibility="invisible"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saltar Login"
+            android:textAlignment="center"
+            android:onClick="omitirLogin"
+            android:textStyle="bold"
+
+            android:textSize="15dp"
+            android:layout_marginTop="435dp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="1dp"
+        android:layout_marginTop="475dp"
+        android:background="#fff"
+
+        >
+
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="495dp"
+         android:orientation="vertical"
+         android:layout_centerHorizontal="true"
+         >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="#fff"
+             android:textStyle="bold"
+             android:text="Al registrarte con tus redes sociales, ingresar como "/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="#fff"
+             android:textStyle="bold"
+             android:text="visitante, aceptas los terminos y condiciones de "/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="#fff"
+             android:textStyle="bold"
+             android:text="uso de la aplicacion."/>
+
+     </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
